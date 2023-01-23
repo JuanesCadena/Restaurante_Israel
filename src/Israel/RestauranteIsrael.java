@@ -2,6 +2,13 @@ package Israel;
 
 import Israel.RestauranteIsrael;
 
+/**
+ * La clase RestauranteIsrael gestiona el stock de comida y numero de comensales
+ * a los que puede servir
+ * 
+ * @author Juan Esteban Cadena
+ * @version 1.0
+ */
 public class RestauranteIsrael {
 	private int patatas;
 	// Numero de patatas que hay
@@ -27,10 +34,21 @@ public class RestauranteIsrael {
 		return ch;
 	}
 
+	/**
+	 * Metodo que añade una cantidad de calamares al stock base
+	 * 
+	 * @param c cantidad de calamares que añade al stock
+	 * 
+	 */
 	public void addCalamares(int c) {
 		this.setCalamares(this.getCalamares() + c);
 	}
 
+	/**
+	 * Metodo que añade una cantidad de patatas al stock base
+	 * 
+	 * @param d cantidad de calamares que añade al stock
+	 */
 	public void addPatatas(int d) {
 		this.setPatatas(this.getPatatas() + d);
 	}
@@ -58,18 +76,34 @@ public class RestauranteIsrael {
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getPatatas() {
 		return patatas;
 	}
 
+	/**
+	 * 
+	 * @param patatas
+	 */
 	public void setPatatas(int patatas) {
 		this.patatas = patatas;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getCalamares() {
 		return calamares;
 	}
 
+	/**
+	 * 
+	 * @param calamares
+	 */
 	public void setCalamares(int calamares) {
 		this.calamares = calamares;
 	}
